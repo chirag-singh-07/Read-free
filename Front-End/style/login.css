@@ -1,0 +1,147 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+.slideshow {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  animation: slideShow 12s infinite;
+}
+
+.slide:nth-child(1) {
+  animation-delay: 0s;
+}
+.slide:nth-child(2) {
+  animation-delay: 4s;
+}
+.slide:nth-child(3) {
+  animation-delay: 8s;
+}
+
+@keyframes slideShow {
+  0% { opacity: 0; }
+  8% { opacity: 1; }
+  33% { opacity: 1; }
+  41% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: auto;
+  background-color: #f4f4f4;
+}
+.container {
+  display: flex;
+  width: 80%;
+  min-width: 900px;
+  height: 500px;
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 22px 8px 8px rgba(0, 0, 0, 0.3);
+}
+
+.left-section {
+  flex: 1;
+}
+.left-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.right-section {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.login-box {
+  width: 100%;
+  height: 400px;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  border: 2px solid #ccc;
+}
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+button {
+  width: 50%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+button[type="submit"] {
+  background-color: #28a745;
+  color: white;
+}
+
+button[type="reset"] {
+  background-color: #dc3545;
+  color: #fff;
+}
+.signup_link {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: bold
+}
+.signup_link a {
+  text-decoration: none;
+  color: #007bff;
+}
+.error{
+  text-align: center;
+  color: red;
+  font-size: 14px;
+  font-weight: bold;
+}

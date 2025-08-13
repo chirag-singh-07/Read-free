@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link rel="stylesheet" href="./style/Project.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+      document.getElementById("qlinks").addEventListener("change", function () {
+        const selected = this.value;
+    
+        if (selected === "categories") {
+          document.getElementById("categories").scrollIntoView({ behavior: "smooth" });
+        } else if (selected === "newly") {
+          document.getElementById("latest_addition").scrollIntoView({ behavior: "smooth" });
+        } else if (selected === "trending") {
+          document.getElementById("Trending_books").scrollIntoView({ behavior: "smooth" });
+        }
+      });
+    </script>
+    
+</head>
+
+<body>
+  <section>
+    <div class="navbar">
+      <header class="nav-container">
+        <h1 class="title">READ FREE</h1>
+        <div class="search_box">
+          <div class="search_div">
+            <input type="text" placeholder="Searching anything?" class="search_input" />
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+          </div>
+        </div>
+        <div class="Qlinks">
+          <select name="Quicklinks" id="qlinks">
+            <option disabled selected>Quicklinks</option>
+            <option value="categories">Categories</option>
+            <option value="newly">Newly Added</option>
+            <option value="trending">Trending</option>
+          </select>
+        </div>
+        
+        
+        
+        <div class="links">
+          <ul class="links">
+            <li><a href="#home">Books</a></li>
+            <li><a href="#home">Logout</a></li>
+          </ul>
+
+          <ul>
+            <li><a href="./pages/login.html">LOGIN</a></li>
+          </ul>
+        </div>
+      </header>
+    </div>
+  </section>
+  <section class="hero" id="hero">
+    <marquee scrollamount="20" behaviour=scroll  ><h1>WELCOME TO READ FREE</h1></marquee>
+    <div class="para">
+      <p>
+        Read Free is a digital library offering free access to a diverse
+        collection of books across multiple genres, authors, and languages.
+        Designed for simplicity and efficiency, our platform allows seamless
+        browsing, searching, and reading—no subscriptions, no restrictions.
+        Explore, discover, and enjoy reading anytime, anywhere.
+      </p>
+    </div>
+    <div class="button_box">
+      <button class="btn hero_btn"><a href="#featured_books">Explore</a></button>
+      <button class="btn hero_btn">
+        <a href="./pages/registration.html">TRY NOW</a>
+      </button>
+    </div>
+  </section>
+
+  <section id="featured_books">
+    <div class="features_title">
+      <h1>Featured Books</h1>
+    </div>
+    <div class="all_books">
+    <div class="book_card">
+      <div class="book_img">
+        <img height="180" src="./image/itendwithus.jpg" alt="it ends with us" />
+      </div>
+      <div class="book_txt">
+        <h2>it ends with us</h2>
+        <p>collen hoover</p>
+      </div>
+      <button class="btn book_btn">
+        <a href="./pdf/_PDF.com_It_Ends_with_Us_-_Colleen_Hoover.pdf" target="_blank">Read Now
+        </a>
+      </button>
+    </div>
+    <div class="book_card">
+      <div class="book_img">
+        <img src="./image/breaking.jpg" alt="breaking butterflies" />
+      </div>
+      <div class="book_txt">
+        <h2>Breaking butterflies</h2>
+        <p>M.Anjelais</p>
+      </div>
+      <button class="btn book_btn">
+        <a href="./pdf/_PDF.com_Breaking_Butterflies_-_M_Anjelais.pdf" target="_blank">
+          Read Now
+        </a>
+      </button>
+    </div>
+    <div class="book_card">
+      <div class="book_img">
+        <img src="./image/itstartswithus.jpg" alt="It Start's With Us" />
+      </div>
+      <div class="book_txt">
+        <h2>It Start's With Us</h2>
+        <p>Colleen Hoover</p>
+      </div>
+      <button class="btn book_btn">
+        <a href="./pdf/_PDF.com_It_starts_with_us_-_Coollen_Hoover.pdf" target="_blank">
+          Read Now </a>
+      </button>
+    </div>
+    </div>
+  </div>
+  </section>
+  <section class="categories" id="categories">
+    <div class="categories_title">
+      <h1>Categories</h1>
+    </div>
+    <div class="categories_container">
+
+      <div class="categories_box">
+        <i class="fa-solid fa-user-graduate"></i>
+        <a href="./pages/Educational.html">
+          <h2>Educational</h2>
+        </a>
+      </div>
+      <div class="categories_box">
+        <i class="fa-solid fa-handcuffs"></i>
+        <a href="./pages/crimethriller.html">
+          <h2>Crime Thriller</h2>
+        </a>
+      </div>
+      <div class="categories_box">
+        <i class="fa-solid fa-wand-sparkles"></i>
+        <a href="./pages/fantasy.html">
+          <h2>Fantasy</h2>
+        </a>
+      </div>
+      <div class="categories_box">
+        <i class="fa-brands fa-bluesky"></i>
+        <a href="./pages/Fiction.html">
+          <h2>Fiction</h2>
+        </a>
+      </div>
+      <div class="categories_box">
+        <i class="fa-solid fa-clover"></i>
+        <a href="./pages/youngadult.html">
+          <h2>Young Adults</h2>
+        </a>
+      </div>
+      <div class="categories_box">
+        <i class="fa-solid fa-indian-rupee-sign"></i>
+        <a href="./pages/indian.html">
+          <h2>Indian</h2>
+        </a>
+      </div>
+      <div class="categories_box">
+        <i class="fa-brands fa-pied-piper-alt"></i>
+        <a href="./pages/classics.html">
+          <h2>classics</h2>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section id="Trending_books">
+    <div class="Trending_title">
+      <h1>Trending Books</h1>
+    </div>
+    <div class="all_books">
+      <div class="book_card">
+        <div class="book_img">
+          <img src="./image/fault.jpg" alt="The fault in our stars" />
+        </div>
+        <div class="book_txt">
+          <h2>The fault in our stars</h2>
+          <p>John green</p>
+        </div>
+        <button class="btn book_btn">
+          <a href="./pdf/_PDF.com_The_Fault_in_Our_Stars_-_John_Green.pdf" target="_blank"> Read Now</a>
+        </button>
+      </div>
+      <div class="book_card">
+        <div class="book_img">
+          <img height="180" src="./image/idluam.jpg" alt="I dont love you anymore" />
+        </div>
+        <div class="book_txt">
+          <h2>I dont love you anymore</h2>
+          <p>Rithvik singh</p>
+        </div>
+        <button class="btn book_btn">
+          <a href="./pdf/_PDF.com_I_dont_love_you_anymore_-_Rithvik_singh_rathore (1).pdf"
+            target="_blank">Read Now
+          </a>
+        </button>
+      </div>
+      <div class="book_card">
+        <div class="book_img">
+          <img src="./image/breaking.jpg" alt="Breaking butterflies" />
+        </div>
+        <div class="book_txt">
+          <h2>Breaking butterflies</h2>
+          <p>M.anjelais</p>
+        </div>
+        <button class="btn book_btn">
+          <a href="./pdf/_PDF.com_Breaking_Butterflies_-_M_Anjelais.pdf" target="_blank">Read Now
+          </a>
+        </button>
+      </div>
+    </div>
+  </section>
+  <section id="latest_addition">
+    <div class="latest_addition">
+      <h1>Newely Added</h1>
+    </div>
+    <div class="all_books">
+      <div class="book_card">
+        <div class="book_img">
+          <img src="./image/love.jpg" alt="Twised love" />
+        </div>
+        <div class="book_txt">
+          <h2>Twised love</h2>
+          <p>Ana huang</p>
+        </div>
+        <button class="btn book_btn">
+          <a href="./pdf/PDF.com_Twisted_love_-_Ana_huang.pdf" target="blank"> Read Now
+          </a>
+        </button>
+      </div>
+      <div class="book_card">
+        <div class="book_img">
+          <img height="180" src="./image/breaking.jpg" alt="Breaking butterflies" />
+        </div>
+        <div class="book_txt">
+          <h2>Breaking butterflies</h2>
+          <p>M.anjelais</p>
+        </div>
+        <button class="btn book_btn">
+          <a href="./pdf/_PDF.com_Breaking_Butterflies_-_M_Anjelais.pdf" target="_blank">Read Now
+          </a>
+        </button>
+      </div>
+      <div class="book_card">
+        <div class="book_img">
+          <img src="./image/harrypotter.jpg" alt="Harry potter" />
+        </div>
+        <div class="book_txt">
+          <h2>Harry potter</h2>
+          <p>Jim kay</p>
+        </div>
+        <button class="btn book_btn">
+          <a href="./pdf/_PDF.com_Harry_Potter_.pdf" target="_blank">Read Now
+          </a>
+        </button>
+      </div>
+      <div class="book_card">
+        <div class="book_img">
+          <img src="./image/itstartswithus.jpg" alt="It Start's With Us" />
+        </div>
+        <div class="book_txt">
+          <h2>It Start's With Us</h2>
+          <p>Novel by Colleen Hoover</p>
+        </div>
+        <button class="btn book_btn">
+          <a href="./pdf/_PDF.com_It_starts_with_us_-_Coollen_Hoover.pdf " target="_blank">Read Now </a>
+        </button>
+      </div>
+    </div>
+  </section>
+  <footer class="footer" id="footer">
+    <div class="footer_title">
+      <p>&copy; All Rights Are Reserved.</p>
+    </div>
+    <div class="footer_links">
+      <a href="#about">About Us</a>
+      <a href="#contact us">Contact Us</a>
+    </div>
+  </footer>
+</body>
+
+</html>

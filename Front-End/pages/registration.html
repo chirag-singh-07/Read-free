@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <link rel="stylesheet" href="../style/login.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-section slideshow">
+        <div class="slide" style="background-image: url('../image/bg1.jpg');"></div>
+        <div class="slide" style="background-image: url('../image/bg2.jpg');"></div>
+        <div class="slide" style="background-image: url('../image/bg3.jpg');"></div>
+      </div>
+      
+
+      <div class="right-section">
+        <h1>Read Free</h1>
+
+        <div class="login-box">
+          <h2>Register Yourself With Us!!!!</h2>
+          <form id="register-form">
+            <div class="form-group">
+              <label for="register-name">Name</label>
+              <input
+                type="text"
+                id="register-name"
+                name="name"
+                placeholder="Enter name"
+              />
+              <span class="error" id="register-name-error"></span>
+            </div>
+            <div class="form-group">
+              <label for="register-email">Email</label>
+              <input
+                type="email"
+                id="register-email"
+                name="email"
+                placeholder="Enter email"
+              />
+              <span class="error" id="register-email-error"></span>
+            </div>
+            <div class="form-group">
+              <label for="register-password">Password</label>
+              <input
+                type="password"
+                id="register-password"
+                name="password"
+                placeholder="Enter password"
+              />
+              <span class="error" id="register-password-error"></span>
+            </div>
+
+            <div class="button-group">
+              <button type="submit">Register Me</button>
+              <button type="reset">Reset</button>
+            </div>
+            <p class="signup_link">
+              Already have an account?
+              <a href="./login.html">Login</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="../JS/signup.js"></script>
+  </body>
+</html>

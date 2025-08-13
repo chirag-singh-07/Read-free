@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="../style/login.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-section slideshow">
+        <div class="slide active" style="background-image: url('../image/bg1.jpg');"></div>
+        <div class="slide" style="background-image: url('../image/bg2.jpg');"></div>
+        <div class="slide" style="background-image: url('../image/bg3.jpg');"></div>
+      </div>
+      
+
+      <div class="right-section">
+        <h1>Read Free</h1>
+
+        <div class="login-box">
+          <h2>Login</h2>
+          <form id="login-form">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="login-email"
+                name="email"
+                placeholder="Enter email"
+              />
+              <span class="error" id="login-email-error"></span>
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                id="login-password"
+                name="password"
+                placeholder="Enter password"
+              />
+              <span class="error" id="login-password-error"></span>
+            </div>
+
+            <div class="button-group">
+              <button type="submit">Login</button>
+              <button type="reset">Reset</button>
+            </div>
+            <p class="signup_link">
+              Don't have any account?
+              <a href="/pages/registration.html">SignUp</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="/Front-End/JS/login.js"></script>
+  </body>
+</html>
