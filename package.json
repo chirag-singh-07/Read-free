@@ -1,0 +1,17 @@
+{
+    "name": "fullstack-app",
+    "version": "1.0.0",
+    "description": "Fullstack app with backend and frontend",
+    "main": "backend/server.js",
+    "scripts": {
+      "start": "node backend/server.js",
+      "dev": "nodemon backend/server.js",
+      "heroku-postbuild": "cd frontend && npm install && npm run build"
+    },
+    "engines": {
+      "node": "22.x"
+    },
+    "dependencies": {},
+    "devDependencies": {}
+  }
+  
