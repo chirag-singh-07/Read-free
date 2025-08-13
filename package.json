@@ -6,7 +6,6 @@
     "scripts": {
       "start": "node backend/server.js",
       "dev": "nodemon backend/server.js",
-      "heroku-postbuild": "cd frontend && npm install && npm run build"
     },
     "engines": {
       "node": "22.x"
